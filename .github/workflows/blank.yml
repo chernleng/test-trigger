@@ -1,8 +1,10 @@
 name: CI
 on:
-  push:
-    paths: 
-      - sub/*.txt
+  push: 
+    branches:
+      Master
+    #paths: 
+      #- sub/*.txt
 
 jobs:
   build:
