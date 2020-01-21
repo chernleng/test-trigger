@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Trigger workfow
       run: |
-        curl -XPOST -u chern-10:a01fee7165286dc1844f85380313a05f058d7fcf -H "Accept: application/vnd.github.everest-preview+json"  \
+        curl -XPOST -u ed065a4c163e2e91582c0756ab7e8f8d6ed3bbad -H "Accept: application/vnd.github.everest-preview+json"  \
         -H "Content-Type: application/json" https://api.github.com/orgs/chernleng/test_workflow/dispatches \
         --data '{"event_type": "update-api"}'
         echo invoke target workflow
