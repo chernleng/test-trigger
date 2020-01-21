@@ -12,6 +12,6 @@ jobs:
     - name: Trigger workfow
       run: |
         curl -XPOST -u ${{ secrets.ACCESS_TOKEN}} -H "Accept: application/vnd.github.everest-preview+json"  \
-        -H "Content-Type: application/json" https://api.github.com/chernleng/test_workflow/dispatches \
+        -H "Content-Type: application/json" https://api.github.com/repos/chernleng/test_workflow/dispatches \
         --data '{"event_type": "update-api"}'
         echo invoke target workflow
