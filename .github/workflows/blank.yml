@@ -2,7 +2,7 @@ name: CI
 on:
   push: 
     paths: 
-      - sub/*.txt
+      - modules/api/*.yml
 
 jobs:
   build:
